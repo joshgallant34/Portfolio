@@ -1,4 +1,4 @@
-// Demo alerts for contact form
+// Alerts for contact form
 document.addEventListener("DOMContentLoaded", function(){
   const contactForm = document.getElementById("contact-form");
   if(contactForm){
@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function(){
     });
   }
 
-  // Optional: active nav highlight
   const navLinks = document.querySelectorAll("nav a");
   const currentPage = window.location.pathname.split("/").pop();
   navLinks.forEach(link => {
