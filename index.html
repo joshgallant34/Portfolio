@@ -1,212 +1,344 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Josh — IT Portfolio</title>
-  <meta name="description" content="Josh — Full‑Stack Developer portfolio showcasing projects, skills, and contact information." />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">J</div>
-        <div>
-          <div style="font-weight:700">Josh — IT Portfolio</div>
-          <div style="font-size:12px;color:var(--muted)">Full‑Stack • C# • JavaScript • SQL</div>
-        </div>
-      </div>
-      <nav>
-        <a href="#index">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main>
-      <!-- About / Hero Section -->
-      <section class="hero">
-        <div class="card intro" id="about">
-          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
-            <div>
-              <h1>Hi, I'm Josh 👋</h1>
-              <p class="lead">A full‑stack developer who builds reliable web apps and desktop tools. I enjoy clean UI, robust back-ends, and automating repetitive workflows.</p>
-            </div>
-            <div style="text-align:right;color:var(--muted);font-size:13px">Location: Canada<br>Open to: Freelance & Entry-level roles</div>
-          </div>
-
-          <div style="margin-top:18px">
-            <div class="section-title"><h3>Quick facts</h3></div>
-            <ul style="margin:0;padding-left:18px;color:var(--muted)">
-              <li>Specialties: Front-end and Back-end</li>
-              <li>Languages: C#, JavaScript, SQL, HTML/CSS, Java</li>
-              <li>Tools: Visual Studio, VS Code, GitHub, MySQL, Entity Framework</li>
-            </ul>
-          </div>
-
-          <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn primary" href="#projects">See projects</a>
-            <a class="btn" href="#contact">Contact me</a>
-            <a class="btn" href="Josh's Resume.docx">Download Resume</a>
-          </div>
-        </div>
-
-        <aside class="card photo">
-          <div class="avatar">J</div>
-          <div style="text-align:center">
-            <div style="font-weight:700">Josh</div>
-            <div class="muted" style="font-size:13px">Full‑Stack Developer</div>
-          </div>
-
-          <div class="contact-links" style="width:100%">
-            <a class="btn" href="mailto:jgallant34@outlook.com">jgallant34@outlook.com</a>
-            <a class="btn" href="https://github.com/joshgallant34" target="_blank">GitHub</a>
-            <a class="btn" href="https://www.linkedin.com/in/josh-gallant-5369b4335" target="_blank">LinkedIn</a>
-          </div>
-
-          <div style="width:100%;margin-top:6px;text-align:center;">
-            <small class="muted">Tip: Replace the placeholders with your real links and resume.</small>
-          </div>
-        </aside>
-      </section>
-
-      <!-- Skills Section -->
-      <section id="skills" class="card" style="margin-bottom:18px">
-        <div class="section-title"><h3>Skills</h3></div>
-        <div class="skills-grid">
-          <div class="skill">
-            <h4>Programming</h4>
-            <div class="chips">
-              <span class="chip">C#</span>
-              <span class="chip">JavaScript</span>
-              <span class="chip">SQL</span>
-              <span class="chip">HTML/CSS</span>
-              <span class="chip">Java</span>
-            </div>
-          </div>
-
-          <div class="skill">
-            <h4>Frameworks & Tools</h4>
-            <div class="chips">
-              <span class="chip">ASP.NET Core</span>
-              <span class="chip">Entity Framework</span>
-              <span class="chip">Node.js</span>
-              <span class="chip">Razor pages</span>
-            </div>
-          </div>
-
-          <div class="skill">
-            <h4>Databases & DevOps</h4>
-            <div class="chips">
-              <span class="chip">MySQL</span>
-              <span class="chip">SQL server</span>
-              <span class="chip">Git</span>
-              <span class="chip">MongoDB</span>
-            </div>
-          </div>
-
-          <div class="skill">
-            <h4>Other</h4>
-            <div class="chips">
-              <span class="chip">Unit testing</span>
-              <span class="chip">REST APIs</span>
-              <span class="chip">Responsive design</span>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Josh — IT Portfolio</title>
+    <meta
+      name="description"
+      content="Josh — Full‑Stack Developer portfolio showcasing projects, skills, and contact information."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="brand">
+          <div class="logo">J</div>
+          <div>
+            <div style="font-weight: 700">Josh — IT Portfolio</div>
+            <div style="font-size: 12px; color: var(--muted)">
+              Full‑Stack • C# • JavaScript • SQL
             </div>
           </div>
         </div>
-      </section>
+        <nav>
+          <a href="#index">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-      <!-- Projects Section -->
-<section id="projects" class="card" style="margin-bottom:18px">
-  <div class="section-title"><h3>Featured Projects</h3></div>
-
-  <div class="projects-grid">
-    <!-- Project 1 -->
-    <div class="project-card">
-      <h4>IronFit-Gym-Concept (fake project)</h4>
-    <p>A modern, responsive fitness website concept built to showcase a high-end gym brand. Features a dynamic layout, hero imagery, and sleek section transitions to highlight programs, trainers, and memberships.</p>
-      <div class="chips">
-        <span class="chip">JavaScript</span>
-        <span class="chip">HTML</span>
-        <span class="chip">CSS</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/joshgallant34/IronFit-Gym-Concept" target="_blank" class="btn">GitHub</a>
-        <a href="https://joshgallant34.github.io/IronFit-Gym-Concept/" target="_blank" class="btn">View Live</a>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="project-card">
-      <h4>retro-games-shop-concept</h4>
-    <p>A nostalgic e-commerce website concept inspired by classic gaming. Features a responsive layout, product cards, and smooth navigation. Designed to highlight vintage games and consoles with a fun, retro aesthetic.</p>
-      <div class="chips">
-        <span class="chip">JavaScript</span>
-        <span class="chip">HTML</span>
-        <span class="chip">CSS</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/joshgallant34/retro-games-shop-concept" target="_blank" class="btn">GitHub</a>
-        <a href="https://joshgallant34.github.io/retro-games-shop-concept/" target="_blank" class="btn">View Live</a>
-      </div>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="project-card">
-      <h4>JC-Bets</h4>
-    <p>A data-driven sports analytics application built with C# and .NET Framework. It compiles and analyzes player and team statistics to deliver insights that help users make smarter fantasy and betting decisions.</p>
-      <div class="chips">
-        <span class="chip">C#</span>
-        <span class="chip">.NET Framework</span>
-        <span class="chip">Data Analytics</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/joshgallant34/JC-Bets" target="_blank" class="btn">GitHub</a>
-      </div>
-    </div>
-
-  <div style="text-align:center;margin-top:16px;">
-    <a href="https://github.com/joshgallant34" target="_blank" class="btn primary">View All Projects on GitHub</a>
-  </div>
-</section>
-
-
-      <!-- Contact Section -->
-      <section id="contact" class="card">
-        <div class="section-title"><h3>Contact</h3></div>
-        <p class="muted">Want to work together? Fill out the form or use the links to reach me directly.</p>
-        <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:12px">
-          <form id="contact-form">
-            <input placeholder="Your name" required />
-            <input placeholder="Your email" type="email" required />
-            <input placeholder="Subject" />
-            <textarea rows="6" placeholder="Message"></textarea>
-            <div style="display:flex;gap:8px;margin-top:6px">
-              <button class="btn primary" type="submit">Send message</button>
-              <a class="btn" href="mailto:jgallant34@outlook.com">Email</a>
-            </div>
-          </form>
-
-          <aside style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
-            <div class="card" style="width:100%;padding:12px;">
-              <strong>Contact info</strong>
-              <div class="muted" style="margin-top:8px">jgallant34@outlook.com<br>GitHub: joshgallant34<br>LinkedIn: /in/josh-gallant-5369b4335</div>
+      <main>
+        <!-- About / Hero Section -->
+        <section class="hero">
+          <div class="card intro" id="about">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 12px;
+              "
+            >
+              <div>
+                <h1>Hi, I'm Josh 👋</h1>
+                <p class="lead">
+                  I’m a full-stack developer who enjoys creating clean
+                  interfaces, strong back-ends, and practical tools.
+                </p>
+              </div>
+              <div
+                style="text-align: right; color: var(--muted); font-size: 13px"
+              >
+                Location: Canada<br />Open to: Freelance & Entry-level roles
+              </div>
             </div>
 
-            <div class="card" style="width:100%;padding:12px;">
-              <strong>Career goals</strong>
-              <div class="muted" style="margin-top:8px">Grow into a software developer role building web apps and desktop tools; contribute to open-source.</div>
+            <div style="margin-top: 18px">
+              <div class="section-title"><h3>Quick facts</h3></div>
+              <ul style="margin: 0; padding-left: 18px; color: var(--muted)">
+                <li>Specialties: Front-end and Back-end</li>
+                <li>Languages: C#, JavaScript, SQL, HTML/CSS, PHP, Java</li>
+                <li>
+                  Tools: Visual Studio, VS Code, GitHub, MySQL, Entity Framework
+                </li>
+              </ul>
             </div>
+
+            <div
+              style="
+                margin-top: 16px;
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+              "
+            >
+              <a class="btn primary" href="#projects">See projects</a>
+              <a class="btn" href="#contact">Contact me</a>
+              <a class="btn" href="Josh's Resume.docx">Download Resume</a>
+            </div>
+          </div>
+
+          <aside class="card photo">
+            <div class="avatar">J</div>
+            <div style="text-align: center">
+              <div style="font-weight: 700">Josh</div>
+              <div class="muted" style="font-size: 13px">
+                Full‑Stack Developer
+              </div>
+            </div>
+
+            <div class="contact-links" style="width: 100%">
+              <a class="btn" href="mailto:jgallant34@outlook.com"
+                >jgallant34@outlook.com</a
+              >
+              <a
+                class="btn"
+                href="https://github.com/joshgallant34"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                class="btn"
+                href="https://www.linkedin.com/in/josh-gallant-5369b4335"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </div>
+
+            <div style="width: 100%; margin-top: 6px; text-align: center"></div>
           </aside>
-        </div>
-      </section>
+        </section>
 
-      <div class="footer">Designed & built by Josh</div>
-    </main>
-  </div>
+        <!-- Skills Section -->
+        <section id="skills" class="card" style="margin-bottom: 18px">
+          <div class="section-title"><h3>Skills</h3></div>
+          <div class="skills-grid">
+            <div class="skill">
+              <h4>Programming</h4>
+              <div class="chips">
+                <span class="chip">C#</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">PHP</span>
+                <span class="chip">SQL</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">HTML/CSS</span>
+                <span class="chip">Java</span>
+              </div>
+            </div>
 
-  <script src="js/main.js"></script>
-</body>
+            <div class="skill">
+              <h4>Frameworks & Tools</h4>
+              <div class="chips">
+                <span class="chip">ASP.NET Core</span>
+                <span class="chip">Angular</span>
+                <span class="chip">Entity Framework</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">Razor pages</span>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h4>Databases & DevOps</h4>
+              <div class="chips">
+                <span class="chip">MySQL</span>
+                <span class="chip">SQL server</span>
+                <span class="chip">Spring Boot</span>
+                <span class="chip">Git</span>
+                <span class="chip">MongoDB</span>
+                <span class="chip">XAMPP</span>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h4>Other</h4>
+              <div class="chips">
+                <span class="chip">Object-Oriented Design</span>
+                <span class="chip">Unit testing</span>
+                <span class="chip">REST APIs</span>
+                <span class="chip">Responsive design</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="card" style="margin-bottom: 18px">
+          <div class="section-title"><h3>Featured Projects</h3></div>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+              <h4>IronFit-Gym-Concept (fake project)</h4>
+              <p>
+                A modern, responsive fitness website concept built to showcase a
+                high-end gym brand. Features a dynamic layout, hero imagery, and
+                sleek section transitions to highlight programs, trainers, and
+                memberships.
+              </p>
+              <div class="chips">
+                <span class="chip">JavaScript</span>
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/joshgallant34/IronFit-Gym-Concept"
+                  target="_blank"
+                  class="btn"
+                  >GitHub</a
+                >
+                <a
+                  href="https://joshgallant34.github.io/IronFit-Gym-Concept/"
+                  target="_blank"
+                  class="btn"
+                  >View Live</a
+                >
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+              <h4>retro-games-shop-concept</h4>
+              <p>
+                A nostalgic website concept inspired by classic gaming. Features
+                a responsive layout, product cards, and smooth navigation.
+                Designed to highlight vintage games and consoles with a fun,
+                retro aesthetic.
+              </p>
+              <div class="chips">
+                <span class="chip">JavaScript</span>
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/joshgallant34/retro-games-shop-concept"
+                  target="_blank"
+                  class="btn"
+                  >GitHub</a
+                >
+                <a
+                  href="https://joshgallant34.github.io/retro-games-shop-concept/"
+                  target="_blank"
+                  class="btn"
+                  >View Live</a
+                >
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+              <h4>JC-Bets</h4>
+              <p>
+                A sports betting application built with C# and .NET Framework.
+                Just a fun little project for a fake betting website.
+              </p>
+              <div class="chips">
+                <span class="chip">C#</span>
+                <span class="chip">.NET Framework</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/joshgallant34/JC-Bets"
+                  target="_blank"
+                  class="btn"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 16px">
+            <a
+              href="https://github.com/joshgallant34"
+              target="_blank"
+              class="btn primary"
+              >View All Projects on GitHub</a
+            >
+          </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="card">
+          <div class="section-title"><h3>Contact</h3></div>
+          <p class="muted">
+            Want to work together? Fill out the form or use the links to reach
+            me directly.
+          </p>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 360px;
+              gap: 18px;
+              margin-top: 12px;
+            "
+          >
+            <form
+              id="contact-form"
+              action="https://formsubmit.co/jgallant34@outlook.com"
+              method="POST"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://joshgallant34.github.io/portfolio/index.html"
+              />
+
+              <input name="name" placeholder="Your name" required />
+              <input
+                name="email"
+                placeholder="Your email"
+                type="email"
+                required
+              />
+              <input name="subject" placeholder="Subject" />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Message"
+              ></textarea>
+
+              <div style="display: flex; gap: 8px; margin-top: 6px">
+                <button class="btn primary" type="submit">Send message</button>
+                <a class="btn" href="mailto:jgallant34@outlook.com">Email</a>
+              </div>
+            </form>
+
+            <aside
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                align-items: flex-start;
+              "
+            >
+              <div class="card" style="width: 100%; padding: 12px">
+                <strong>Contact info</strong>
+                <div class="muted" style="margin-top: 8px">
+                  jgallant34@outlook.com<br />GitHub: joshgallant34<br />LinkedIn:
+                  /in/josh-gallant-5369b4335
+                </div>
+              </div>
+
+              <div class="card" style="width: 100%; padding: 12px">
+                <strong>Career goals</strong>
+                <div class="muted" style="margin-top: 8px">
+                  Grow into a software developer role building web apps and
+                  desktop tools.
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <div class="footer">Designed & built by Josh</div>
+      </main>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
