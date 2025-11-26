@@ -1,3 +1,4 @@
+/* Root Variables */
 :root {
   --bg: #0f1724;
   --card: #0b1220;
@@ -10,26 +11,17 @@
   --fw-heading: 700;
   --fw-body: 400;
 }
-/* rest of your styles from <style> go here */
-:root {
-  --bg: #0f1724;
-  --card: #0b1220;
-  --accent: #4f46e5;
-  --muted: #9aa4b2;
-  --glass: rgba(255, 255, 255, 0.04);
-  --max-width: 1100px;
-  --radius: 14px;
-  --gap: 20px;
-  --fw-heading: 700;
-  --fw-body: 400;
-}
+
+/* Global Reset & Base Styles */
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
@@ -42,22 +34,27 @@ body {
   display: flex;
   justify-content: center;
 }
+
+/* Wrapper */
 .wrap {
   width: 100%;
   max-width: var(--max-width);
 }
 
+/* Header / Branding / Navigation */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 28px;
 }
+
 .brand {
   display: flex;
   align-items: center;
   gap: 14px;
 }
+
 .logo {
   width: 56px;
   height: 56px;
@@ -69,16 +66,28 @@ header {
   font-weight: 800;
   color: white;
 }
+
+.brand-title {
+  font-weight: 700;
+}
+
+.brand-subtitle {
+  font-size: 12px;
+  color: var(--muted);
+}
+
 nav a {
   color: var(--muted);
   text-decoration: none;
   margin-left: 18px;
   font-size: 15px;
 }
+
 nav a:hover {
   color: var(--accent);
 }
 
+/* Hero Section */
 .hero {
   display: grid;
   grid-template-columns: 1fr 360px;
@@ -86,12 +95,58 @@ nav a:hover {
   align-items: center;
   margin-bottom: 28px;
 }
+
 @media (max-width: 880px) {
   .hero {
     grid-template-columns: 1fr;
   }
 }
 
+.hero-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-location {
+  text-align: right;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Intro text in hero */
+.intro h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+  font-weight: var(--fw-heading);
+}
+
+.intro p.lead {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Quick Facts */
+.facts-wrapper {
+  margin-top: 18px;
+}
+
+.facts-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+/* Buttons row in hero & contact */
+.action-row {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Cards & Photo Section */
 .card {
   background: linear-gradient(
     180deg,
@@ -104,22 +159,13 @@ nav a:hover {
   border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
-.intro h1 {
-  margin: 0 0 6px;
-  font-size: 28px;
-  font-weight: var(--fw-heading);
-}
-.intro p.lead {
-  margin: 0;
-  color: var(--muted);
-}
-
 .photo {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
+
 .avatar {
   width: 160px;
   height: 160px;
@@ -132,12 +178,32 @@ nav a:hover {
   color: var(--accent);
   font-weight: 700;
 }
+
+.photo-text {
+  text-align: center;
+}
+
+.photo-name {
+  font-weight: 700;
+}
+
+.photo-role {
+  font-size: 13px;
+}
+
+/* Contact links inside photo card */
 .contact-links {
   display: flex;
   flex-direction: column;
   gap: 8px;
   width: 100%;
 }
+
+.full-width {
+  width: 100%;
+}
+
+/* Buttons */
 .btn {
   display: inline-block;
   padding: 10px 14px;
@@ -148,37 +214,44 @@ nav a:hover {
   font-weight: 600;
   border: 1px solid rgba(255, 255, 255, 0.03);
 }
+
 .btn.primary {
   background: linear-gradient(90deg, var(--accent), #06b6d4);
   color: white;
   border: none;
 }
 
+/* Skills Section */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
   margin-top: 12px;
 }
+
 @media (max-width: 560px) {
   .skills-grid {
     grid-template-columns: 1fr;
   }
 }
+
 .skill {
   padding: 12px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.02);
 }
+
 .skill h4 {
   margin: 0 0 6px;
   font-size: 14px;
 }
+
 .chips {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
+
 .chip {
   padding: 6px 10px;
   border-radius: 999px;
@@ -187,48 +260,91 @@ nav a:hover {
   color: var(--muted);
 }
 
+/* Projects Section */
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px;
   margin-top: 18px;
 }
+
 @media (max-width: 960px) {
   .projects {
     grid-template-columns: 1fr;
   }
 }
+
 .project-card {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.project-card .meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.badges {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.badge {
-  font-size: 12px;
-  padding: 6px 8px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.02);
-  color: var(--muted);
-}
+
 .project-card p {
   margin: 0;
   color: var(--muted);
 }
-.project-actions {
+
+.project-actions,
+.project-links {
   display: flex;
   gap: 8px;
 }
 
+.section-bottom {
+  margin-bottom: 18px;
+}
+
+.projects-footer {
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* Contact Section */
+form {
+  display: grid;
+  gap: 10px;
+}
+
+input,
+textarea {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 10px;
+  border-radius: 8px;
+  color: inherit;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.contact-btn-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.aside-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.side-card {
+  width: 100%;
+  padding: 12px;
+}
+
+.aside-text {
+  margin-top: 8px;
+}
+
+/* Footer */
 .footer {
   margin-top: 28px;
   text-align: center;
@@ -237,31 +353,19 @@ nav a:hover {
   padding: 20px;
 }
 
-/* utility */
+/* Utility Classes */
 .muted {
   color: var(--muted);
 }
+
 .section-title {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 12px;
 }
+
 .section-title h3 {
   margin: 0;
   font-size: 18px;
-}
-
-/* contact form simple */
-form {
-  display: grid;
-  gap: 10px;
-}
-input,
-textarea {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.04);
-  padding: 10px;
-  border-radius: 8px;
-  color: inherit;
 }
